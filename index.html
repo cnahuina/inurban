@@ -568,20 +568,30 @@
             }
 
             var map = new google.maps.Map(document.getElementById('maps'), options);
-
-            google.maps.event.addListener(map, 'click', function (event) {
-                addMarker({ coords: event.latLng });
-            });
+            var icon = {
+                url: "https://img.icons8.com/plasticine/2x/marker.png", // url
+                scaledSize: new google.maps.Size(50, 50), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+            };
             var markers = [
                 {
                     coords: { lat: -12.046016, lng: -77.030554 },
                     idCord: 1,
-                    content: '<h1>Coordenada 1</h1>'
+                    content: '<h1>Coordenada 1</h1>',
+                    iconImage: icon
                 },
                 {
                     coords: { lat: -12.111062, lng: -77.0315913 },
                     idCord: 2,
-                    content: '<h1>Coordenada 2</h1>'
+                    content: '<h1>Coordenada 2</h1>',
+                    iconImage: icon
+                },
+                {
+                    coords: { lat: -12.0565900, lng: -77.1181400 },
+                    idCord: 3,
+                    content: '<h1>Coordenada 3</h1>',
+                    iconImage: icon
                 }
             ];
 
@@ -608,11 +618,13 @@
                         $('#exampleModal').modal('show');
                         console.log(infoWindow.id);
                         if (infoWindow.id === 1) {
-                            $("#body_mapa").append("<h1>Primer modal</h1>");
-                        } else {
-                            $("#body_mapa").append("<h1>Segundo modal</h1>");
+                            document.getElementById('body_mapa').innerHTML = infoWindow.content;
+                        } else if (infoWindow.id === 2){
+                            document.getElementById('body_mapa').innerHTML = infoWindow.content;
+                        } else if (infoWindow.id === 3){
+                            document.getElementById('body_mapa').innerHTML = infoWindow.content;
                         }
-                        infoWindow.open(map, marker);
+                        //infoWindow.open(map, marker);
                     });
                 }
             }
