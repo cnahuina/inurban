@@ -13,6 +13,15 @@
   justify-content: start;
 }
 
+.modal-backdrop {
+  position: relative!important;
+  top: auto!important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0 !important;
+}
+
 #map {
   height: 600px;
   width: 100%; }
@@ -89,6 +98,7 @@ a:hover,
   text-decoration: none;
   color: #1F1F1F;
 }
+
 
 /* line 36, ../../Arafath/CL/CL October/213. Business/HTML/scss/theme-default.scss */
 a,
@@ -3821,7 +3831,7 @@ h3 {
 
 /* line 16, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .contact-info__icon i, .contact-info__icon span {
-  color: #8f9195;
+  color: #fff;
   font-size: 27px;
 }
 
@@ -3830,7 +3840,7 @@ h3 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #fff;
 }
 
 /* line 30, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
@@ -3840,14 +3850,14 @@ h3 {
 
 /* line 36, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #fff;
 }
 
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .contact-title {
-  font-size: 27px;
+  font-size: 30pt;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -3869,7 +3879,7 @@ h3 {
   height: 48px;
   padding-left: 18px;
   font-size: 13px;
-  background: transparent;
+  background: #fff;
 }
 
 /* line 69, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
