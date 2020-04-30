@@ -119,8 +119,8 @@
                 @include transition(.3s);
             }
             &:hover{
-                background: #28AE60;
-                border-color: #28AE60;
+                background: #A5D239;
+                border-color: #A5D239;
                 h3{
                     color: #fff;
                 }
@@ -191,8 +191,8 @@
 
         }
         &:hover{
-            background: #28AE60;
-            border-color: #28AE60;
+            background: #A5D239;
+            border-color: #A5D239;
         }
     }
 }
@@ -201,7 +201,7 @@
 // 
 // project_area 
 .project_area{
-    background: #28AE60;
+    background: #A5D239;
     padding: 150px 0;
     @media #{$mobile_device} {
         padding: 100px 0;
@@ -226,7 +226,7 @@
         .boxed-btn3-white{
             &:hover{
                 background: #fff;
-                color: #28AE60 !important;
+                color: #A5D239 !important;
             }
         }
     }
@@ -294,7 +294,7 @@
             line-height: 40px;
             border: 1px solid #D4EFDF;
             left:0px;
-            color: #28AE60;
+            color: #A5D239;
             bottom: 0;
             top: auto;
         }
